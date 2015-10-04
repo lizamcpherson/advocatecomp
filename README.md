@@ -11,3 +11,4 @@ In general, whenever you pull code, you should probably run ```python manage.py 
 
 You should also periodically run ```pip install -r requirements.txt``` in case someone has installed new packages. 
 
+# advocatecomp
