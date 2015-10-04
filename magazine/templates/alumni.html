@@ -2,6 +2,26 @@
 
 {% block content %}
 <div class="container">
-	<h1 class="header">YOUR CONTENT HERE</h1>
+	<h1 class="header">ALUMNI LIST</h1>
+
+{% if alumni_list %}
+
+	{% for alumnus in alumni_list %}
+		<p>lsdjfhsldakj</p>
+
+    {% endfor %}
+
+    {% else %}
+	    <p>No alumni registered yet.</p>
+
+	    
+
+{% endif %}
+
+
+
 </div>
 {% endblock %}
+
+
+

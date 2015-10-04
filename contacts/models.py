@@ -1,3 +1,7 @@
+
+# models.py
+
+
 from django.db import models
 
 # class Board(models.Model):
@@ -41,6 +45,7 @@ class Contact(models.Model):
 	website = models.CharField(max_length=255, blank=True, verbose_name='Website')
 	profession = models.CharField(max_length=255, blank=True, verbose_name='Profession')
 	graduationYear = models.CharField(max_length=255, blank=True, verbose_name='Graduation year')
+	alumStatus = models.TextField(blank=True, verbose_name='Alum Status')
 	otherDegrees = models.CharField(max_length=255, blank=True, verbose_name='Other degrees')
 	board = models.CharField(max_length=255, blank=True, verbose_name='Board')
 	positionHeld = models.CharField(max_length=255, blank=True, verbose_name='Position held')
@@ -71,4 +76,4 @@ class Interaction(models.Model):
 	date = models.DateField(null=True, blank=True)
 	category = models.IntegerField(choices=INTERACTION_CATEGORIES, default=0)
 	donationAmount = models.IntegerField(null=True, blank=True, verbose_name='Donation amount (if applicable)')
-	note = models.TextField()
+	note = models.TextField()	

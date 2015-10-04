@@ -9,6 +9,7 @@ import random
 from django.shortcuts import redirect
 from itertools import chain
 import logging
+from contacts.models import Contact
 
 logger = logging.getLogger("magazine")
 
@@ -23,4 +24,5 @@ def masthead(request):
 
 def alumni(request):
   template_name = 'alumni.html'
+  alumni_list = "Contact.objects.all()"
   return render_to_response(template_name, context_instance=RequestContext(request))
